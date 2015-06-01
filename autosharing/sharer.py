@@ -25,10 +25,6 @@ class TwitterSharer(Sharer):
     social_network = 'twitter'
 
     def __init__(self):
-        print(settings.TWITTER_CONSUMER_KEY)
-        print(settings.TWITTER_CONSUMER_SECRET)
-        print(settings.TWITTER_ACCESS_TOKEN)
-        print(settings.TWITTER_ACCESS_TOKEN_SECRET)
         auth = tweepy.OAuthHandler(
             settings.TWITTER_CONSUMER_KEY, settings.TWITTER_CONSUMER_SECRET)
         auth.set_access_token(
